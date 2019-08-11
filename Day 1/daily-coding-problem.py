@@ -10,8 +10,8 @@ Bonus: Can you do this in one pass?"""
 
 
 def func(mylist,K):
-    for i in range(0,len(mylist)):
-        for j in range(i,len(mylist)):
+    for i in range(0,len(mylist)-1):
+        for j in range(i+1,len(mylist)):
             if mylist[i]+mylist[j]==K:
                 print mylist[i] ,"and" , mylist[j]
 
