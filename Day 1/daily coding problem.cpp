@@ -10,7 +10,7 @@ Bonus: Can you do this in one pass?
 #include <stdio.h>
 using namespace std;
 int func(int* a,int K){
-	for (int i=0;i<sizeof(*a);i=i+1){
+	for (int i=0;i<sizeof(*a)-1;i=i+1){
 		for (int j=i+1;j<sizeof(*a);j= j+1){
 			if ((a[i]+a[j])==K){
 				cout <<a[i]<<" and "<<a[j]<<endl;
